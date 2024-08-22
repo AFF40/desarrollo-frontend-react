@@ -25,8 +25,11 @@ const routes = createBrowserRouter([
                 path: '/login',
                 element: <LoginForm />,
             },
+
         ]
     }
-]);
+],{
+    basename: basename
+});
 
 export default routes;
