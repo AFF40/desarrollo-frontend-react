@@ -40,6 +40,10 @@
 nav {
   background-color: #333;
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 
 ul {
@@ -54,6 +58,17 @@ li {
   margin-right: 2rem;
 }
 
+.dataLoged {
+ 
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+
 a {
   color: white;
   text-decoration: none;
@@ -62,4 +77,207 @@ a {
 
 a:hover {
   color: #ffcc00;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+form h5 {
+  text-align: center;
+}
+
+
+
+form div {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding-right: 10px;
+}
+
+form div label {
+  width: 100px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+form div input {
+  flex: 1;
+  min-width: 200px;
+  width: calc(100% - 120px);
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button {
+  width: auto;
+  font-size: 16px;
+  margin: 10px auto; 
+}
+
+.button-submit
+{
+  background-color: #ffcc00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 40%;
+}
+.button-submit:hover
+{
+  background-color: rgb(0, 255, 0);
+  color: black;
+  cursor:pointer;
+}
+
+.link-logout{
+  color: rgb(0, 0, 255);
+  cursor: pointer;
+  margin: 10px auto;
+  
+}
+.link-logout:hover{
+  color: rgb(255, 0, 0);
+}
+
+
+/*estilos for modals*/
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.notification-success {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+.close-btn-success {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  color: #7e4f1a;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+/*estilos for modals*/
+
+
+/*estilos de LandingPage*/
+
+/* estilos del banner */
+.LP-contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25%;
+}
+
+.LP-titulo {
+  width: 100%;
+  padding: 2%;
+  color: white;
+  font-size: 40px;
+  background: rgb(78, 184, 78);
+}
+
+/* estilos del saludo */
+.LP-saludo {
+  width: 100%;
+}
+
+.LP-saludo h2 {
+  font-size: 28px;
+  border-bottom: 3.2px solid rgb(78, 184, 78);
+}
+
+.LP-saludo p {
+  width: 100%;
+  font-size: 19px;
+}
+
+/* estilos de los temas cubiertos */
+.LP-temas {
+  width: 100%;
+}
+
+.LP-temas h2 {
+  font-size: 28.8px;
+  border-bottom: 3.2px solid rgb(78, 184, 78);
+}
+
+.LP-temas li {
+  font-size: 19px;
+}
+
+/* estilos para recursos */
+.LP-recursos {
+  width: 100%;
+}
+
+.LP-recursos h2 {
+  font-size: 28px;
+  border-bottom: 3.2px solid rgb(78, 184, 78);
+}
+
+.LP-recursos p {
+  font-size: 19px;
+}
+
+/* estilos para el footer (copyright) */
+.LP-footer {
+  width: 100%;
+  padding: 1.6% 1.6%;
+  color: white;
+  font-size: 19px;
 }
